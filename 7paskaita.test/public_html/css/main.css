@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid #fff;
+         }
+
+html, body {
+    height: 100%;
+    background-color: #a2a2a2;
+}
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+body * {
+    display: inline-block;
+}
+
+.A, .B, .D, .E, .I{
+    height: 2em;
+}
+
+.A {
+    background-color: green;
+    width: calc(100% - 25%);
+}
+
+.B {
+    background-color: green;
+    width: 25%;
+}
+
+.C {
+    background-color: yellow;
+    float: left;
+    width: 25%;
+    height: calc(100% - 4em);
+    overflow: auto;
+}
+
+.centerBlock {
+    width: calc(100% - 50%);
+    height: calc(100% - 4em);
+    border: none;
+    float: left;
+}
+
+.D {
+    background-color: blue;
+    width: 100%;
+}
+
+.E {
+    background-color: blue;
+    width: 100%;
+}
+
+.F {
+    background-color: red;
+    width: 25%;
+    float: left;
+    height: calc(2 * 2em);
+}
+
+.G {
+    background-color: blue;
+    width: 100%;
+    height: calc(100% - 4em);
+    overflow: auto;
+}
+
+.H {
+    background-color: red;
+    width: 25%;
+    float: left;
+    height: calc(100% - 8em);
+    overflow: auto;
+}
+
+.I {
+    background-color: deepskyblue;
+    width: 100%;
+    height: 2em;
+}
+
+@supports (display: grid) {
+    body {
+        display: grid;
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+    }
+    .A {
+        grid-column: 1/3;
+        height: auto;
+        width: auto;
+    }
+
+    .B {
+        grid-column: 3;
+        height: auto;
+        width: auto;
+    }
+
+    .C {
+        grid-column: 1;
+        grid-row: 2/5;
+        height: auto;
+        width: auto;
+    }
+
+    .centerBlock {
+        grid-column: 2/3;
+        grid-row: 2/5;
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-rows: 10% 10% 10%;
+    }
+
+    .F {
+        grid-column: 3;
+        grid-row: 2/3;
+        height: auto;
+        width: auto;
+    }
+
+    .H {
+        grid-column: 3;
+        grid-row: 3/span5;
+        height: auto;
+        width: auto;
+    }
+
+    .I {
+        grid-column: 1/span 3;
+        grid-row: 5;
+        height: auto;
+        width: auto;
+    }
+}

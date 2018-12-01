@@ -1,0 +1,38 @@
+h1 {
+    font-size: 22px;
+}
+
+.pagrindinis {
+    border: 1px solid red;
+}
+
+.pagrindinis.vidinis {
+    /* iesko <main class="pagrindinis vidinis"> */
+}
+
+.pagrindinis > p {
+    text-transform: uppercase;
+    color: orange;
+}
+
+.pagrindinis .vidinis > .trecias {
+    color: blue;
+}
+
+.pagrindinis + p {
+    color: red;
+}
+
+.pagrindinis h2, .trecias > .highlight {
+    color: green;
+    /* sujungia i viena linija */
+}
+
+main a:hover {
+    font-size: 25px;
+}
+
+/* E F
+ * E > F
+ * E + F
+ * E ~ F*/

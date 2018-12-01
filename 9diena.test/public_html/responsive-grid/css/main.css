@@ -1,0 +1,97 @@
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 0.5fr 0.5fr 0.5fr auto;
+  grid-template-areas: "header header header" "nav main aside" ". main aside" ". main aside" "footer footer footer";
+}
+
+header {
+  background-color: #9933cc;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  grid-area: header;
+}
+header div {
+  color: #fff;
+  cursor: pointer;
+}
+
+header div {
+  padding: 20px;
+}
+
+header div:nth-child(3) {
+  margin-left: auto;
+}
+
+nav {
+  grid-area: nav;
+}
+
+nav div {
+  background-color: #33B5E5;
+  padding: 10px;
+  margin: 10px 20px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+nav div:hover {
+  background-color: #1a9bcb;
+}
+nav div:nth-child(1) {
+  margin-top: 20px;
+}
+
+main {
+  padding: 10px;
+  grid-area: main;
+}
+
+aside {
+  background-color: #33B5E5;
+  color: #fff;
+  padding: 10px;
+  margin: 20px;
+  grid-area: aside;
+}
+
+footer {
+  background-color: #0099CC;
+  grid-area: footer;
+  height: 10vh;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+footer div {
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 100%;
+    grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 0.3fr;
+    grid-template-areas: "header" "nav" "main" "aside" "footer";
+  }
+
+  nav div:nth-child(n+2) {
+    position: absolute;
+    opacity: 0;
+  }
+
+  nav:hover > div {
+    position: static;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,60 @@
+.container {
+    background: lightblue;
+    width: 100vw;
+    height: 62.5vh;
+}
+
+.block {
+    background: blue;
+    width: 25vw;
+    height: 25vh;
+    margin: 0.8em 0em;
+}
+
+.stroked {
+    border: 0.8em solid black;
+}
+
+.rectangle {
+    background: purple;
+    width: 65vw;
+    height: 25vh;
+    margin: 0.8em 0em;
+}
+
+.rectangle .block {
+    background: red;
+}
+
+.rectangle.stroked {
+    background: yellow;
+    border: none;
+}
+
+.block:hover {
+    background: rgba(0,0,255,0.5);
+}
+
+/* E F
+ * E > F
+ * E + F
+ * E ~ F*/
+
+.pirmasBlokas {
+
+}
+
+.blokoVaikas {
+    display: block;
+    color: green;
+    padding: 25px;
+}
+
+.pirmas {
+    width: 25%
+    background-color: darkgrey;
+}
+
+.antras {
+
+}

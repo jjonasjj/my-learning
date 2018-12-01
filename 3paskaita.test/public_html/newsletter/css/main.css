@@ -1,0 +1,62 @@
+html {
+    background-image: url(../img/pexels2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+.sign-up, .overlay {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#email {
+    background-color: white;
+    padding: 15px;
+    width: auto;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+#button {
+    background-color: #44c767;
+    color: white;
+    border: 1px solid #18ab29;
+    font-size: 1.0em;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: transparent;
+}
+
+#button:active {
+    position: relative;
+    top: 2px;
+}
+
+.headline {
+    font-size: 2.2em;
+    line-height: 1.5em;
+}
+
+.headline span {
+    font-weight: 700;
+}
+
+.overlay {
+    background-color: rgba(0,0,255, 0.5);
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    position: fixed;
+}
