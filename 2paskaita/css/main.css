@@ -1,0 +1,63 @@
+header {
+    border: 1px solid red;
+    display: block;
+    min-height: 50px;
+    height: 50px;
+}
+
+header img {
+    float: left;
+    padding: 5px;
+    width: 136px;
+    height: 37px;
+}
+
+header h2 {
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+.navigacija {
+    color: red;
+}
+
+.navigacija a {
+    color: grey;
+}
+
+.navigacija a:hover {
+    color: green;
+    font-size: 2em;
+}
+
+#pirmaAntraste {
+    text-transform: uppercase;
+    width: 100%;
+}
+
+#pirmaNuotrauka {
+    width: 60%;
+}
+
+main section {
+    width: 60%;
+    float: left;
+    display: inline-block;
+}
+
+main footer {
+    width: 60%;
+    float: left;
+    display: inline-block;
+}
+
+.reklama img {
+    width: 25%;
+    border: 1px solid red;
+    display: inline-block;
+}
+
+.pirmaReklama img {
+    width: 100%;
+}

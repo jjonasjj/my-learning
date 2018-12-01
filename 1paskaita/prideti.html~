@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vaisiaus pridejimas</title>
+    <style>
+        #button {
+            background-color: #73E23E;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form id="vaisiausPridejimas" method="get" action="index.html">
+        <label for="pavadinimas">Vaisiaus pavadinimas:</label>
+        <input type="TEXT" id="pavadinimas" name="pavadinimas" value="Bananas"><br>
+        Svoris: <input type="NUMBER" name="svoris" id="skaicius"><br>
+        Failas: <input type="FILE" name="failas" id="failas"><br>
+        Aprasymas: <textarea id="aprasymas" name="aprasymas" cols="30" rows="4"></textarea><br>
+        Kategorija:
+        <select id="kategorija" name="kategorija">
+            <option value="maziVaisiai">Mazi vaisiai</option>
+            <option value="vidutiniaiVaisiai">Vidutiniai vaisiai</option>
+            <option value="dideliVaisiai">Didelis vaisiai</option>
+        </select><br>
+        Tel: <input type="tel" name="telefonas" id="telefonas"><br>
+        Email: <input type="email" name="email" id="email"><br>
+        Miestas: <input type="text" name="miestas" list="miestas"><br>
+        <datalist id="miestas">
+            <option value="Vilnius">Vilnius</option>
+            <option value="Kaunas">Kaunas</option>
+            <option value="Klaipeda">Klaipeda</option>
+            <option value="Siauliai">Siauliai</option>
+            <option value="Utena">Utena</option>
+        </datalist><br>
+        <input type="SUBMIT" id="button" value="Prideti">
+    </form>
+    <a href="index.html" title="Grizti i produktus" id="button">Grizti i produktus</a>
+</body>
+</html>
