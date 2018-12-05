@@ -1,61 +1,212 @@
 body
   width: 100%
-  height: auto
   margin: 0
 
-.home-simple 
-  width: 90%
+.homepage
   margin: 0 auto
-  display: grid
-  grid-template-columns: repeat(4, 1fr)
-  grid-gap: 1rem
-  grid-template-rows: auto auto auto auto auto
+  width: 1170px
 
-.top, .body
-  font-family: roboto
+.top, .main
+  font-family: 'Lato', sans-serif
   padding: 0 1rem
 
 .top
-  grid-column: 1 / 5
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: auto
 
-.header
+.header-1
   display: flex
-  justify-content: space-between
-.header:nth-of-type(2) div 
-  padding: 2rem 0rem
+  flex-direction: column
+  div
+    padding: 1rem
 
-.header:nth-of-type(2)
-  border-bottom: 1px solid #ccc
-
-ul
+.header-2
+  justify-self: center
+  text-align: center
+  div
+    padding: 1rem
   display: flex
-  list-style-type: none
+  flex-direction: column
 
-ul
-  justify-content: center
+.header-3
+  justify-self: end
+  text-align: right
+  div
+    padding: 1rem
+  display: flex
+  flex-direction: column
 
-.menu li
-  margin-left: 2rem
-  text-transform: uppercase
+.menu
+  grid-column: 1/4
+  ul
+    display: flex
+    list-style-type: none
+    padding: 0 1rem
+    justify-content: center
+  li
+    margin-left: 2rem
+    text-transform: uppercase
 
 .logo
   font-weight: 700
   font-size: 2.5rem
-
-.body
-  grid-column: 1/5
+  text-align: center
 
 .slider
   display: grid
-  grid-template-columns: 2fr 1fr
-  grid-gap: 1em
-  
+  grid-template-columns: auto auto
+  grid-gap: 30px
 
 .slider-img-1
-  background-color: red
+  background-color: #ccc
+  grid-row:1/3
+  height: 576px
+  width: 870px
 
 .slider-img-2
-  background-color: blue
+  background-color: #ccc
+  height: 328px
+  width: 270px
 
 .slider-img-3
-  background-color: green
+  background-color: #333
+  height: 220px
+  width: 270px
+
+.divider
+  margin: 30px 0
+  width: 100%
+  height: 1px
+  background-color: #ccc
+
+.promotions
+  display: grid
+  grid-template-columns: auto auto
+  grid-column-gap:30px
+
+.holder-1
+  grid-row: 1/3
+
+.promotions-img-1
+  background-color: #ccc
+  height: 672px
+  width: 470px
+.promotions-img-2
+  background-color: #ccc
+  height: 246px
+  width: 670px
+.promotions-img-3
+  background-color: #ccc
+  height: 352px
+  width: 670px
+
+.blog
+  display: flex
+
+.blog-img-1
+  background-color: #ccc
+  height: 255px
+  width: 370px
+  flex: 1
+  margin: 30px 15px
+  display: flex
+  flex-direction: column
+  justify-content: end
+
+.blog-info
+  display: flex
+
+.title
+  font-size: 2rem
+  font-family: 'Montserrat', sans-serif
+  padding: 1rem
+  font-weight: 700
+  text-align: center
+  color: #000
+  text-transform: uppercase
+
+.title-sub
+  font-size: 1rem
+  font-family: 'Lato', sans-serif
+  text-align: center
+  font-weight: 500
+  color: #999
+
+.font-normal
+  font-size: 1.5rem
+
+.font-small
+  font-size: 1rem
+
+h1
+  margin: 0
+p
+  margin: 0
+
+.subscribe
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.form-div
+  width: 570px
+  border: 1px solid #ccc
+  margin: 2rem
+  padding: 10px
+  text-align: center
+  form
+    height: 100%
+    display: flex
+    input
+      border: none
+      flex: 1
+    button
+      background-color: #333
+      color: #fff
+      border: none
+      padding: 0.2rem 1.2rem
+      font-weight: 700
+      font-family: 'Lato', sans-serif
+      font-size: 0.9rem
+      text-transform: uppercase
+      cursor: pointer
+
+.footer
+  display: flex
+
+.footer-col
+  flex: 1
+  margin: 2rem
+  text-align: left
+  ul
+    margin: 1rem 0
+    padding: 0
+    list-style-type: square
+    font-family: 'Lato', sans-serif
+    li
+      color: #999
+      margin: 1rem
+      font-size: 0.9rem
+  h1
+    padding: 1rem 0
+    text-align: left
+    text-transform: uppercase
+  .logo
+    text-align: center
+
+.footer-col:nth-of-type(4)
+  ul
+    list-style-type: none
+
+.copyright-area
+  text-align: center
+  margin-bottom: 2rem
+  .copyright
+    color: #999
+    span
+      color: #000
+      font-family: 'Lato', sans-serif
+      font-weight: 700
+
