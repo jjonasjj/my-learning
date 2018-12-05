@@ -1,0 +1,53 @@
+body
+  background-color: #f2f2f2
+
+.number
+  grid-area: number
+  font-size: 6rem
+  color: rgba(0,0,0,0.3)
+.title
+  grid-area: title
+  font-size: 1.6rem
+  text-align: end
+.title p
+  font-size: 1.1rem
+  display: block
+.icon
+  grid-area: icon
+  font-size: 2rem
+  color: blue
+
+.i 
+  font-size: 2rem
+  color: blue
+.description
+  grid-area: description
+.icon-plus
+  grid-area: icon-plus
+
+.holder
+  display: grid
+  padding: 3rem 0
+  align-items: center
+  justify-items: center
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+  grid-template-rows: auto
+  grid-template-areas: "number title icon description icon-plus"
+
+@media (max-width: 768px)
+  body
+    background-color: orange
+
+  .title
+    font-size: 1.3rem
+
+  .title p
+    font-size: 1rem
+
+  .icon
+    display: none
+  
+  .holder
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: auto
+    grid-template-areas: "number title icon-plus" "description description description" 

@@ -1,0 +1,73 @@
+.row
+  margin: 0
+body
+  background-color: #f1f2f4
+.holder
+  display: flex
+  padding: 3rem 0
+  border-bottom: 1px solid #ccc
+  .number
+    font-size: 6rem
+    color: rgba(0,0,0,0.3)
+  .title
+    font-size: 1.6rem
+    text-align: right
+  .title p
+    font-size: 1.1rem
+    display: block
+  .icon
+    font-size: 2rem
+    color: #fff
+    background-color: #785d8a
+    border-radius: 50%
+    padding: 40px
+  .icon-plus
+    background-color: transparent
+    border: 3px solid #ccc
+    font-size: 3rem
+    padding: 15px
+    border-radius: 50%
+    text-align: center
+    color: #ccc
+
+@media (max-width: 768px)
+  body
+    background-color: #f1f2f4
+  .holder
+    padding: 3rem 0 3rem 0
+    flex-wrap: wrap
+    .number
+      font-size: 1.3rem
+      display: inline-block
+      padding: 0
+      margin: 0 5px
+      align-self: start
+    .sign
+      padding: 0
+      align-self: start
+
+    .title
+      padding: 0
+      font-size: 1.3rem
+      display: inline-block
+      text-align: left
+      align-self: start
+
+    .title p
+      font-size: 1rem
+
+    .icon
+      display: none
+
+    .icon-plus
+      display: inline-block
+      font-size: 1.3rem
+      border: 1px solid #ccc
+      padding: 0
+      margin: 6px 10px 10px 10px
+
+    .description
+      order: 2
+      padding: 0
+      margin-left: 5
+      text-align: left

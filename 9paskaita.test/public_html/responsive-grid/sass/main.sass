@@ -1,0 +1,87 @@
+@import "colors"
+@import "spacings"
+
+=center
+  margin: 0 auto
+
+=center-flex-row
+  display: flex
+  flex-direction: row
+  align-items: center
+
+body 
+  height: 100vh
+  padding: 0
+  +center
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  grid-template-rows: auto 0.5fr 0.5fr 0.5fr auto
+  grid-template-areas: "header header header" "nav main aside" ". main aside" ". main aside" "footer footer footer"
+
+header  
+  background-color: $header-bg
+  padding: $medium-size 
+  +center-flex-row  
+  grid-area: header
+  div
+    color: $white
+    cursor: pointer
+
+header
+  div 
+    padding: $medium-size
+
+header div:nth-child(3) 
+  margin-left: auto
+
+nav 
+  grid-area: nav
+
+nav 
+  div 
+    background-color: $nav-bg
+    padding: $small-size
+    margin: $small-size $medium-size
+    color: $white
+    text-transform: uppercase
+    cursor: pointer
+    &:hover
+      background-color: darken($nav-bg, 10%)
+    &:nth-child(1)
+      margin-top: $medium-size
+main 
+  padding: $small-size
+  grid-area: main
+
+aside 
+  background-color: $nav-bg
+  color: $white
+  padding: $small-size
+  margin: $medium-size
+  grid-area: aside
+
+footer 
+  background-color: $footer-bg
+  grid-area: footer
+  height: $footer-height
+  color: $white
+  +center-flex-row
+  justify-content: center
+  div
+   padding: 0 $small-size 
+
+@media (max-width: 768px)
+  body 
+    grid-template-columns: 100%
+    grid-template-rows: 0.3fr 0.5fr 0.5fr 0.5fr 0.3fr
+    grid-template-areas: "header" "nav" "main" "aside" "footer"
+ 
+  nav
+    div
+      &:nth-child(n+2)
+        position: absolute
+        opacity: 0
+  nav:hover > div
+    position: static
+    opacity: 1
+    transition: opacity 0.3s ease-in-out
