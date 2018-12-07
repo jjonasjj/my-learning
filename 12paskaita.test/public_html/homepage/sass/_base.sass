@@ -1,0 +1,119 @@
+* 
+  margin: 0
+
+body
+  background-color: #fff
+
+.nav
+  padding: 2rem
+  display: flex
+  height: 10vh
+  align-items: center
+  img
+    height: 8vh
+    padding-left: 2rem
+    filter: brightness(0)
+  ul
+    display: flex
+    margin-left: auto
+    list-style-type: none
+    text-transform: uppercase
+  li
+    padding: 1rem
+
+.main
+  background-image: url('../img/header-about-me.jpg')
+  background-size: cover
+  background-position: center
+  position: relative
+  height: 70vh
+  display: flex
+  align-items: center
+  justify-content: center
+  .main-title
+    width: 40%
+    text-align: center
+    color: #fff
+    z-index: 2
+
+.overlay
+  background-color: rgba(0,0,0,0.6)
+  width: 100%
+  height: 100%
+  z-index: 0
+  position: absolute
+  left: 0
+  top: 0
+
+.features
+  background-color: #10c9c3
+  display: flex
+  align-items: center
+  justify-content: center
+  .feature-item
+    flex: 1
+    align-items: center
+    justify-content: center
+    color: #fff
+    display: flex
+    padding: 7rem 0
+    i
+      font-size: 2rem
+    .feature-text
+      margin-left: 1rem
+
+.about-me
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  background-color: #f6f6f6
+  .about-me-image
+    background-image: url('../img/about-me.jpg')
+    background-size: cover
+    background-position: center
+    height: 100vh
+    width: 100%
+    flex:1
+  .about-me-title
+    margin: 4rem
+    padding-left: 6rem
+    flex:1
+    h1
+      padding: 2rem 0
+    p
+      padding: 1rem 0
+    text-align: left
+    width: 30%
+
+.contact
+  padding: 3rem
+  margin: 0 auto
+  height: 100vh
+  h1
+    color: #000
+    font-size: 2rem
+    padding: 1rem 0
+  width: 40%
+
+.contact-info
+  padding: 2rem
+  text-align: center
+
+.contact-form
+  form
+    .name-email
+      display: flex
+    .info
+      display: flex
+      flex-direction: column
+    input
+      margin: 1rem
+    textarea
+      margin: 1rem
+    button
+      margin: 1rem
+
+.footer
+  height: 20vh
+  background-color: #000
