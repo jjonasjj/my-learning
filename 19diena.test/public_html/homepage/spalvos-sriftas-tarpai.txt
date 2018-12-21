@@ -1,0 +1,12 @@
+SPALVOS:
+
+balta - #fff
+fonui ir tekstui: melsva/žalia - #10c9c3
+tekstui: pilka - #5f5f5f
+tekstui: juoda - #171717
+tekstui footer: pilka - #bcbcbc
+
+
+ŠRIFTAS: Montserrat,sans-serif;
+
+TARPAI: kuo panašesni į užduoties vaizdą (neturi būt tikslūs)

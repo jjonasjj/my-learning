@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<h1>First name:</h1>
+<input type="text" name="first_name" id="first_name" value="">
+<h1>Last name:</h1>
+<input type="text" name="last_name" id="last_name" value="">
+<br>
+<button id="say_hi">Say hi!</button>
+<div id="hello"></div>
+
+<div class="bmi_calc">
+  <div class="input">
+    <p>Weight (kg/lbs):</p>
+    <input type="text" name="weight" id="weight" value="">
+    <p>Height (cm/ins):</p>
+    <input type="text" name="height" id="height" value="">
+    <br>
+    <input type="radio" name="choose" id="kg-cm"><label for="kg-cm">kg-cm</label>
+    <input type="radio" name="choose" id="lbs-ins"><label for="lbs-ins">lbs-ins</label>
+    <br>
+    <button id="submit">Click</button>
+  </div>
+  <div id="bmi_result"></div>
+</div>
+<div class="bmi_table">
+  <table>
+    <tr>
+      <th>Color</th>
+      <th>Range</th>
+    </tr>
+    <tr>
+      <td class="underweight"></td>
+      <td>Underweight</td>
+    </tr>
+    <tr>
+      <td class="normal"></td>
+      <td>Normal</td>
+    </tr>
+    <tr>
+      <td class="overweight"></td>
+      <td>Overweight</td>
+    </tr>
+    <tr>
+      <td class="obese"></td>
+      <td>Obese</td>
+    </tr>
+  </table>
+</div>
+<div class="bmi_display"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

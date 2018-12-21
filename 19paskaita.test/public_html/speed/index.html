@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>16 Paskaita</title>
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+</head>
+<body>
+  <div class="holder">
+    <div class="title-holder">
+      <h1 class="title">Suveskite automobilio duomenis</h1>
+    </div>
+    <div class="form">
+      <input type="text" name="1" id="1" value="2018">
+      <input type="text" name="2" id="2" value="LRS123">
+      <input type="text" name="3" id="3" placeholder="Meters">
+      <input type="text" name="4" id="4" placeholder="Seconds">
+      <button type="submit" id="btn">Submit</button>
+    </div>
+    <div id="result" class="title title-result"></div>
+  </div>
+  <div class="holder">
+    <div class="title-holder">
+      <h1 class="title">Duomenys</h1>
+    </div>
+    <div class="button-holder">
+      <button type="submit" id="btn-1">Pradiniai duomenys</button>
+      <button type="submit" id="btn-2">Rasti max</button>
+    </div>
+    <table id="duomenys-table">
+    </table>
+    <div id="result" class="title title-result"></div>
+  </div>
+  <div class="holder">
+    <div class="title-holder">
+      <h1 class="title">Suveskite automobilio duomenis</h1>
+    </div>
+    <div class="form">
+      <input type="text" name="date" id="date" value="2018-12-13 12:57">
+      <input type="text" name="number" id="number" placeholder="LRS123">
+      <input type="text" name="meters" id="meters" placeholder="Meters">
+      <input type="text" name="seconds" id="seconds" placeholder="Seconds">
+    </div>
+    <table>
+      <tbody id="car-table">
+      </tbody>
+    </table>
+    <div class="button-holder">
+      <button type="submit" id="addCar" class="button-style-1">Prideti automobili</button>
+      <button type="submit" id="calcAutos" class="button-style-1">Siusti duomenis</button>
+    </div>
+    <div id="result" class="title title-result"></div>
+    <table>
+      <tbody id="autos-table">
+      </tbody>
+    </table>
+  </div>
+  <script src="js/app.js" charset="utf-8"></script>
+</body>
+</html>

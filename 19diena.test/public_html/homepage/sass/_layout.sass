@@ -1,0 +1,104 @@
+=flex-align-justify-center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.nav
+  display: flex
+  height: 10vh
+  align-items: center
+  img
+    height: 8vh
+  ul
+    display: flex
+    margin-left: auto
+
+.main
+  position: relative
+  height: 70vh
+  +flex-align-justify-center
+  .main-title
+    width: 40%
+    z-index: 2
+
+.features
+  +flex-align-justify-center
+  .feature-item
+    flex: 1
+    +flex-align-justify-center
+
+.about-me
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  .about-me-image
+    height: 100vh
+    width: 100%
+    flex:1
+  .about-me-title
+    flex:1
+    width: 30%
+
+.contact
+  height: 100vh
+  width: 50%
+
+.footer
+  display: flex
+
+.footer-col-1
+  flex: 1
+
+.footer-col-flex
+  display: flex
+  ul
+    flex: 1
+
+@media (max-width: 768px)
+  body
+    background-color: red
+  .footer
+    text-align: center
+    display: block
+  .footer-col-1
+    padding: 1rem
+    display: block
+    ul
+      padding: 0
+      margin: 0.5rem
+
+  .contact
+    width: auto
+    height: auto
+  
+  .name-email
+    display: block
+    input[type=email]
+      margin-left: 0
+      margin-top: 2rem
+
+  .about-me
+    display: block
+    height: auto
+    padding: 2rem 0
+    .about-me-title
+      width: auto
+      padding-left: 0
+
+  .features
+    display: block
+    .feature-item
+      padding: 2rem 0 2rem 0
+      justify-content: start
+      i
+        font-size: 3rem
+        padding: 1rem
+      p
+        font-size: 1.5rem
+
+  .main-subheading
+    font-size: 1.5rem
+  .main-heading
+    font-size: 1.9rem
+
